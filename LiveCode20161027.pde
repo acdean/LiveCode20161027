@@ -46,9 +46,9 @@ class Wave {
   float a, b, c, d, e, f;
   
   Wave() {
-    a = random(-10, 10);
-    b = random(-10, 10);
-    c = random(-10, 10);
+    a = random(-5, 5);
+    b = random(-5, 5);
+    c = random(-5, 5);
     d = random(-180, 180);
     e = random(-30, 30);
     f = random(-10, 10);
