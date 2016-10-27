@@ -35,6 +35,10 @@ void draw() {
   } 
 }
 
+void keyPressed() {
+  saveFrame("frame####.png");
+}
+
 float f(int x, int y) {
   return w0.f(x, y)
     + w1.f(x, y) 
