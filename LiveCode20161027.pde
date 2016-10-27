@@ -46,12 +46,12 @@ class Wave {
   float a, b, c, d, e, f;
   
   Wave() {
-    a = random(-.010, .010);
-    b = random(-.010, .010);
+    a = random(-10, 10);
+    b = random(-10, 10);
     c = random(-.10, .10);
     d = random(-.010, .010);
     e = random(-100, 100);
-    f = random(-.010, .010);
+    f = random(-10, 10);
   }
   
   float f(int x, int y) {
