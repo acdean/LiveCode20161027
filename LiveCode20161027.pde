@@ -51,7 +51,7 @@ class Wave {
     c = random(-10, 10);
     d = random(-10, 10);
     e = random(-10, 10);
-    f = random(-10, 10);
+    f = random(-.010, .010);
   }
   
   float f(int x, int y) {
