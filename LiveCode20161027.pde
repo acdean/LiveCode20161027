@@ -26,9 +26,10 @@ void draw() {
   //rotateY(frameCount / 87.0);
   rotateZ(frameCount / 51.0);
   strokeWeight(8);
-  stroke(255);
+  colorMode(HSB, 360, 100, 100);
   for (int x = -SZ ; x < SZ ; x++) {
     for (int y = -SZ ; y < SZ ; y++) {
+      stroke((x + y) % 360, 100, 100);
       point(x * 20, y * 20, f(x, y));
     }
   } 
