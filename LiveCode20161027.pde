@@ -16,7 +16,9 @@ void draw() {
   colorMode(HSB, 360, 100, 100);
   background(frameCount & 360, 50, 50);
   colorMode(RGB);
-  strokeWeight(2);
+  rotateX(frameCount / 100);
+  rotateY(frameCount / 87);
+  strokeWeight(4);
   stroke(255);
   for (int x = -SZ ; x < SZ ; x++) {
     for (int y = -SZ ; y < SZ ; y++) {
