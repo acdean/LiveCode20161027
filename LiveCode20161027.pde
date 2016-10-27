@@ -50,7 +50,7 @@ class Wave {
     b = random(-.010, .010);
     c = random(-.010, .010);
     d = random(-.010, .010);
-    e = random(-10, 10);
+    e = random(-100, 100);
     f = random(-.010, .010);
   }
   
