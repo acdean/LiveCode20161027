@@ -48,8 +48,8 @@ class Wave {
   Wave() {
     a = random(-10, 10);
     b = random(-10, 10);
-    c = random(-.10, .10);
-    d = random(-.010, .010);
+    c = random(-10, 10);
+    d = random(-180, 180);
     e = random(-100, 100);
     f = random(-10, 10);
   }
