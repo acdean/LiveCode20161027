@@ -29,7 +29,7 @@ void draw() {
   colorMode(HSB, 360, 100, 100);
   for (int x = -SZ ; x < SZ ; x++) {
     for (int y = -SZ ; y < SZ ; y++) {
-      stroke(map(abs(x + y), 0, SZ * 4, 0, 360), 50, 50);
+      stroke(map(abs(x + y), 0, SZ * 4, 0, 360), 100, 100);
       point(x * 20, y * 20, f(x, y));
     }
   } 
