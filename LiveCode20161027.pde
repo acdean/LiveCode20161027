@@ -25,7 +25,7 @@ void draw() {
   rotateX(frameCount / 91.0);
   rotateY(frameCount / 87.0);
   rotateZ(frameCount / 51.0);
-  strokeWeight(4);
+  strokeWeight(8);
   stroke(255);
   for (int x = -SZ ; x < SZ ; x++) {
     for (int y = -SZ ; y < SZ ; y++) {
