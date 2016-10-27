@@ -14,10 +14,11 @@ void setup() {
 
 void draw() {
   colorMode(HSB, 360, 100, 100);
-  background(frameCount & 360, 50, 50);
+  background(frameCount % 360, 50, 50);
   colorMode(RGB);
-  rotateX(frameCount / 100.0);
+  rotateX(frameCount / 91.0);
   rotateY(frameCount / 87.0);
+  rotateZ(frameCount / 51.0);
   strokeWeight(4);
   stroke(255);
   for (int x = -SZ ; x < SZ ; x++) {
