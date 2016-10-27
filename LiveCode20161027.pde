@@ -56,6 +56,6 @@ class Wave {
   
   float f(int x, int y) {
     int t = frameCount;
-    return sin(radians((a * x + b * y + f * t) * c + d)) * e;
+    return sin(radians((a * x + b * y + (f % 360) * t) * c + d)) * e;
   }
 }
