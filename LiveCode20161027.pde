@@ -29,7 +29,7 @@ void draw() {
   stroke(255);
   for (int x = -SZ ; x < SZ ; x++) {
     for (int y = -SZ ; y < SZ ; y++) {
-      point(x * 10, y * 10, f(x, y));
+      point(x * 20, y * 20, f(x, y));
     }
   } 
 }
