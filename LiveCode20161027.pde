@@ -1,14 +1,12 @@
 import peasy.*;
-import peasy.org.apache.commons.math.*;
-import peasy.org.apache.commons.math.geometry.*;
-import peasy.test.*;
 
 PeasyCam cam;
 int SZ = 20;
 Wave w0, w1, w2, w3, w4;
+boolean video = false;
 
 void setup() {
-  size(640, 480, OPENGL);
+  size(640, 360, OPENGL);
   colorMode(HSB, 360, 100, 100);
   cam = new PeasyCam(this, 100);
   w0 = new Wave();
@@ -29,10 +27,17 @@ void draw() {
   colorMode(HSB, 360, 100, 100);
   for (int x = -SZ ; x < SZ ; x++) {
     for (int y = -SZ ; y < SZ ; y++) {
-      stroke(map(abs(x + y), 0, SZ * 4, 0, 360), 100, 100);
+      stroke((x + 2 * y + frameCount) % 360, 100, 100);
       point(x * 20, y * 20, f(x, y));
     }
   } 
+  
+  if (video) {
+    saveFrame("frame#####.png");
+    if (frameCount > 500) {
+      exit();
+    }
+  }
 }
 
 void keyPressed() {
@@ -55,7 +60,7 @@ class Wave {
     b = random(-5, 5);
     c = random(-5, 5);
     d = random(-180, 180);
-    e = random(-30, 30);
+    e = random(-50, 50);
     f = random(-10, 10);
   }
   
